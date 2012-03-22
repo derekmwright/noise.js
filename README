@@ -1,0 +1,25 @@
+Usage:
+
+// Instantiate
+var image = new noise();
+
+// Generate Random Noise Pattern
+image.generate();
+
+// Add the DOM Element to your Document
+document.body.appendChild(image.domElement);
+
+// If you have a RequestAnimFrame loop you can use noise.generate() to create a new pattern. 
+MainLoop() {
+  image.generate();
+  requestAnimFrame(MainLoop);
+}
+
+...etc
+
+Optional arguments for instantiation are: width, height, opacity, monochrome/color, size (not implemented).
+
+Default values are Width/Height: 200px, Opacity: 0.04, Monochromatic.
+
+
+Enjoy.
