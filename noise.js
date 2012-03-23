@@ -22,13 +22,13 @@ var noise = function(height, width, opacity, type, size) {
             for(x=0;x<this.width;x++) {
                 var rgba;
                 if(this.type == 'monochrome') {
-                    var rand = Math.floor(Math.random()* 256);
+                    var rand = Math.floor(Math.random()* 255);
                     rgba = rand+','+rand+','+rand+','+this.opacity;
                 }
                 if(this.type == 'color') {
-                    var rand0 = Math.floor(Math.random()* 256);
-                    var rand1 = Math.floor(Math.random()* 256);
-                    var rand2 = Math.floor(Math.random()* 256);
+                    var rand0 = Math.floor(Math.random()* 255);
+                    var rand1 = Math.floor(Math.random()* 255);
+                    var rand2 = Math.floor(Math.random()* 255);
                     rgba = rand0+','+rand1+','+rand2+','+this.opacity;
                 }
                 context.fillStyle = "rgba("+rgba+")";
