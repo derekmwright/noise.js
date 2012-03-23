@@ -17,9 +17,9 @@ MainLoop() {
 
 ...etc
 
-Optional arguments for instantiation are: width, height, opacity, monochrome/color, size (not implemented).
+Optional arguments for instantiation are: height, width, opacity, monochrome/color, size.
 
-Default values are Width/Height: 200px, Opacity: 0.04, Monochromatic.
+Default values are Height/Width: 200px, Opacity: 0.04, Monochromatic, Size: 1.
 
 
 Enjoy.

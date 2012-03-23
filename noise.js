@@ -17,6 +17,7 @@ var noise = function(height, width, opacity, type, size) {
         canvas.height = this.height;
         canvas.width = this.width;
         var context = canvas.getContext('2d')
+        var size_mod = this.size - 1;
         for(y=0;y<this.height;y++) {
             for(x=0;x<this.width;x++) {
                 var rgba;
@@ -31,8 +32,10 @@ var noise = function(height, width, opacity, type, size) {
                     rgba = rand0+','+rand1+','+rand2+','+this.opacity;
                 }
                 context.fillStyle = "rgba("+rgba+")";
-                context.fillRect(x, y, 1, 1);
+                context.fillRect(x, y, this.size, this.size);
+                x += size_mod;
             }
+            y += size_mod;
         }
     }
 }
