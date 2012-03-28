@@ -15,6 +15,9 @@ MainLoop() {
   requestAnimFrame(MainLoop);
 }
 
+// Or apply it as a style to your webpage background
+document.body.style.backgroundImage = "url(" + image.domElement.toDataURL("image/png") + ")";
+
 ...etc
 
 Optional arguments for instantiation are: height, width, opacity, monochrome/color, size.
