@@ -15,7 +15,7 @@ var noise = function(parameters) {
     this.width = parameters.width !== undefined ? width:200;
     this.opacity = parameters.opacity !== undefined ? opacity:0.04;
     this.size = parameters.size !== undefined ? size:1;
-    this.type = paramaeters.type !== undefined ? type:'monochrome';
+    this.type = parameters.type !== undefined ? type:'monochrome';
     
     // domElement used to append to the document
 
