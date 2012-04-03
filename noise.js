@@ -11,11 +11,11 @@ var noise = function(parameters) {
 
     // Default settings for undefined parameters
 
-    this.height = parameters.height !== undefined ? parameter.height:200;
-    this.width = parameters.width !== undefined ? parameter.width:200;
-    this.opacity = parameters.opacity !== undefined ? parameter.opacity:0.04;
-    this.size = parameters.size !== undefined ? parameter.size:1;
-    this.type = parameters.type !== undefined ? parameter.type:'monochrome';
+    this.height = parameters.height !== undefined ? parameters.height:200;
+    this.width = parameters.width !== undefined ? parameters.width:200;
+    this.opacity = parameters.opacity !== undefined ? parameters.opacity:0.04;
+    this.size = parameters.size !== undefined ? parameters.size:1;
+    this.type = parameters.type !== undefined ? parameters.type:'monochrome';
     
     // domElement used to append to the document
 
