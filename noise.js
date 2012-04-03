@@ -11,8 +11,8 @@ var noise = function(parameters) {
 
     // Default settings for undefined parameters
 
-    this.height = parameters.height !== undefined ? height:200;
-    this.width = parameters.width !== undefined ? width:200;
+    this.height = (parameters.height !== undefined) ? height:200;
+    this.width = (parameters.width !== undefined ? width:200;
     this.opacity = parameters.opacity !== undefined ? opacity:0.04;
     this.size = parameters.size !== undefined ? size:1;
     this.type = parameters.type !== undefined ? type:'monochrome';
