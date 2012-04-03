@@ -5,14 +5,24 @@
 // http://derekwright.me
 // http://github.com/derekmwright
 //
-var noise = function(height, width, opacity, type, size) {
-    this.height = (height !== undefined) ? height:200;
-    this.width = (width !== undefined) ? width:200;
-    this.opacity = (opacity !== undefined) ? opacity:0.04;
-    this.size = (size !== undefined) ? size:1;
+var noise = function(parameters) {
+
+    parameters = parameters || {};
+
+    // Default settings for undefined parameters
+
+    this.height = parameters.height !== undefined ? height:200;
+    this.width = parameters.width !== undefined ? width:200;
+    this.opacity = parameters.opacity !== undefined ? opacity:0.04;
+    this.size = parameters.size !== undefined ? size:1;
+    this.type = paramaeters.type !== undefined ? type:'monochrome';
+    
+    // domElement used to append to the document
+
     this.domElement = document.createElement('canvas');
-    this.type = (type !== undefined) ? type:'monochrome';
+
     this.generate = function() {
+
         var canvas = this.domElement;
         canvas.height = this.height;
         canvas.width = this.width;
@@ -37,5 +47,7 @@ var noise = function(height, width, opacity, type, size) {
             }
             y += size_mod;
         }
+
     }
+
 }
