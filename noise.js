@@ -22,11 +22,11 @@ var noise = function(parameters) {
     this.domElement = document.createElement('canvas');
 
     this.generate = function() {
-
+        var x,y;
         var canvas = this.domElement;
         canvas.height = this.height;
         canvas.width = this.width;
-        var context = canvas.getContext('2d')
+        var context = canvas.getContext('2d');
         var size_mod = this.size - 1;
         for(y=0;y<this.height;y++) {
             for(x=0;x<this.width;x++) {
@@ -47,7 +47,5 @@ var noise = function(parameters) {
             }
             y += size_mod;
         }
-
-    }
-
-}
+    };
+};
